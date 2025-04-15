@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="shortcut icon" href="../资源img/biaozhi.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/lianxiwomen.css">
+</head>
+<body>
+<div class="container">
+    <!-- 第一部分 头部导航栏-->
+    <div class="header1">
+        <!--logo-->
+        <div class="header1_nav">
+            <img src="../资源img/biao.jpg" alt="logo图" class="logo">
+            <ul id="dataout">
+                <li>
+                        <p>CYZ非遗云枢</p>
+                </li>
+        </div>
+    </div>
+    <ul class="header2">
+        <div class="box">
+            <ul id="dataout">
+                <li>
+                    <a href="../index.html">
+                        <p>官网首页</p>
+                        <p>INDEX</p>
+                    </a>
+                </li>
+            
+                <!-- <li>
+                    <a href="../主页/">
+                        <p>政策</p>
+                        <p>POLICY</p>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../主页/名录.html">
+                        <p>名录</p>
+                        <p>ITEM</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../主页/非遗传承人介绍.html">
+                        <p>非遗传承人</p>
+                        <p>INHERITOR</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../主页/ziyuan.html">
+                        <p>展览</p>
+                        <p>EXHIBITION</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </ul>
+    <!-- 第一点五部分 过度部分 -->
+        <div class="qiao">
+            首页 > 联系我们
+          </div>
+          <div class="zhanlan">
+            <div class="jing1"></div>
+            <div class="zi1">联系我们</div>
+            <div class="jing2"></div>
+            </div>
+    <!-- 第二部分 用户反馈界面 -->
+    <div class="wai">
+        <div class="anniu">
+            <button class="but1" onclick="showBox('box1')">邮箱联系</button>
+            <button class="but2" onclick="showBox('box2')">其他方式</button>
+        </div>
+        <div id="box1">
+            <div class="Content-Main">
+                <div class="Content-Main1">
+                    <h1>用户反馈</h1>
+                </div>
+                <form action="" method="post" class="form-report">
+                    <label>
+                        <span>您的联系方式</span>
+                        <select name="select2" class="select2">
+                            <option value="Email">邮箱号</option>
+                            <option value="Phone">电话</option>
+                            <option value="QQ">QQ</option>
+                        </select>
+                        <input type="text" placeholder="">
+                    </label>
+                    <label>
+                        <span>建议</span>
+                        <textarea id="mesaage" name="message" placeholder="您的建议..."></textarea>
+                    </label>
+                    <label>
+                        <span>类型</span>
+                        <select name="select1" class="select1">
+                            <option value="Job Inquiry">工作建议</option>
+                            <option value="General Question">其他问题</option>
+                        </select>
+                    </label>
+                    <label>
+                        <input type="button" class="button" value="发送">
+                    </label>
+                </form>
+            </div>
+            
+        </div>
+        <div id="box2">
+            <div class="inner_1">
+                <div class="zuo">
+                    <img src="../资源img/dizhi.jpg" style="height: 350px;width: 350px;">
+                </div>
+                <div class="zuo_you">
+                    <img src="../资源img/douyin.jpg" style="height: 350px;width: 350px;">
+                </div>
+                <div class="you">
+
+                </div>
+            </div>
+            <div class="inner_2">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function showBox(boxId) {
+            // 隐藏所有盒子
+            document.querySelectorAll('#box1, #box2').forEach(box => {
+                box.style.display = 'none';
+            });
+            // 显示指定盒子
+            document.getElementById(boxId).style.display = 'block';
+            // 滚动到指定盒子位置
+            document.getElementById(boxId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <!-- 第三部分 底部导航栏 -->
+    <div class="dibu">
+        <div class="dibu_shang">
+            <div class="dibu_we">
+                <a>
+                联系我们
+            </a>
+            </div>
+            <div class="dibu_we">
+                <a href="../主页/banquan.html">
+                版权与免责声明
+            </a>
+            </div>
+        </div>
+        <div class="dibu_xia">
+            <span class="s">
+                主管：西华师范大学计算机学院
+            </span>
+            <span class="s">
+                主办：西华师范大学计算机学院
+            </span>
+            <span class="s">
+                Copyright©2018 CYZ非遗云枢·CYZ数字博物馆 All Rights Reserved
+            </span>
+            <span class="s">
+                网站建设：CV工程师
+            </span>
+            <p class="red">
+                建议使用360极速、Chrome、Firefox浏览器，最佳分辨率1920×1080
+            </p>
+        </div>
+    </div>
+    <div class="hezi">
+        <div class="slot-track">
+            <div class="s1"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s2"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s3"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s4"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s5"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s6"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s7"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s8"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s9"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s10"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s11"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s12"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s13"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s14"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s15"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s16"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s17"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s18"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s19"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s20"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s21"></div>
+        </div>
+        <div class="slot-track">
+            <div class="s18"></div>
+        </div>
+    </div>
+    <script>
+        const slotTracks = document.querySelectorAll('.slot-track');
+        const originalHeight = 55;
+        const maxHoverHeight = 90;
+        const hoverHeights = [30, 40, 50, 60, 70, 80, maxHoverHeight, 80, 70, 60, 50, 40, 30];
+
+        const setInitialHoverHeights = (index) => {
+            const startIndex = Math.max(0, index - Math.floor(hoverHeights.length / 2));
+            const endIndex = Math.min(slotTracks.length, startIndex + hoverHeights.length);
+            for (let i = 0; i < slotTracks.length; i++) {
+                const relativeIndex = i - startIndex;
+                if (relativeIndex >= 0 && relativeIndex < hoverHeights.length) {
+                    slotTracks[i].style.height = `${hoverHeights[relativeIndex]}px`;
+                    // 同步设置内部图片的高度
+                    slotTracks[i].querySelector('div').style.height = `${hoverHeights[relativeIndex]}px`;
+                } else {
+                    slotTracks[i].style.height = `${originalHeight}px`;
+                    slotTracks[i].querySelector('div').style.height = `${originalHeight}px`;
+                }
+            }
+        };
+
+        const lowerSideHeights = (index) => {
+            const startIndex = Math.max(0, index - Math.floor(hoverHeights.length / 2));
+            const endIndex = Math.min(slotTracks.length, startIndex + hoverHeights.length);
+            for (let i = 0; i < slotTracks.length; i++) {
+                if (i >= startIndex && i < endIndex && i!== index) {
+                    slotTracks[i].style.height = `${originalHeight}px`;
+                    slotTracks[i].querySelector('div').style.height = `${originalHeight}px`;
+                }
+            }
+        };
+
+        let currentHoverIndex = -1;
+
+        slotTracks.forEach((track, index) => {
+            track.addEventListener('mouseover', () => {
+                if (currentHoverIndex!== -1) {
+                    lowerSideHeights(currentHoverIndex);
+                }
+                setInitialHoverHeights(index);
+                currentHoverIndex = index;
+            });
+
+            track.addEventListener('mouseout', () => {
+                // 鼠标移开时不恢复高度
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
