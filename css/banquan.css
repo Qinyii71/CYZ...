@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container {
+    padding: auto;
+    min-width: 1340px;
+    background: url("../资源img/img11.jpg");
+    height: 500px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header1{
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(232, 229, 233);
+    position: absolute;
+    /* 参照物位置 */
+    z-index: 9;
+} 
+.header1_nav{
+    width: 80%;
+    height: 75px;
+    margin: 0 auto;
+}
+.header1_nav ul{
+    width: 74%;
+    height: 75px;
+    float: left;
+}
+.header1_nav ul li{
+    width: 12%;
+    float: left;
+    margin-left:75px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 900;
+    font-family: 宋体;
+}
+.header1_nav ul li{
+    color:rgb(93, 89, 95);
+}
+.header1_nav ul li p{
+    margin-left: -50px;
+    margin-top: 4px;
+}
+.header2{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    margin-top: 65px;
+    background-color: rgba(232, 229, 233, 0.729);
+    position: absolute;
+    /* 参照物位置 */
+    z-index: 9;
+} 
+.header2_nav{
+    width: 80%;
+    height: 75px;
+    margin: 0 auto;
+}
+/* 图标 */
+.header1_nav .logo{
+    float: left;
+    margin-left: 25px;
+    height: 60px;
+}
+/* 各个页面跳转 */
+.box{
+    height: 75px;
+    width: 90%px;
+    margin: 0 auto;
+    border-bottom-color: brown;
+    margin-left: 100px;
+}
+.box ul li{
+    width: 12%;
+    float: left;
+    margin-left:125px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 15px;
+    font-family: 宋体;
+}
+.box ul li>a{
+    color:rgb(114, 107, 113);
+    display: block;
+}
+.box ul li>a p{
+    text-align: center;
+}
+/* 调亮度 */
+.box a{
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+}
+
+.box a:hover{
+    filter: brightness(120%);
+    -webkit-filter: brightness(120%);
+}
+.box ul li>a:hover{
+    border: 0px solid black;
+    /* border-radius: 10px; */
+    padding: 2px;
+    background-color:rgba(183, 182, 184, 0.729) ;
+}
+/* 过度部分 */
+.guodu{
+    width: 100%;
+    height: 300px;
+    background: url("../资源img/img11.jpg");
+    position: absolute;
+    top: 150px;
+}
+.guodu_inner{
+    font-family: 宋体;
+    font-size: 18px;
+    color: #453429;
+    position: absolute;
+    left: 66px;
+}
+.guodu_t{
+    position: absolute;
+    top: 170px;
+    text-align: center;
+}
+.guo_jing1{
+    left: 582px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: url("../资源img/png7.png") no-repeat 28px 8px;
+    top: -113px;
+}
+.guo_jing2{
+    top: -106px;
+    left: 774px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    background: url("../资源img/png7.png") no-repeat -22px 1px;
+}
+.guo_zi{
+    top: -107px;
+    left: 648px;
+    position: relative;
+    font-family: 宋体;
+    font-size: 28px;
+    color: #453429;
+}
+/* 文字部分 */
+.wen{
+    width: 100%;
+    height: 700px;
+    background: url("../资源img/img11.jpg");
+    position: absolute;
+    top: 300px;
+}
+.wen_qian{
+    width: 80%;
+    height: 50px;
+    position: relative;
+    top: -21px;
+    left: 10%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 宋体;
+    font-size: 20px;
+    font-weight: 700;
+    color: #453429;
+}
+.wen_zhu{
+    top: -16px;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    font-family: 宋体;
+    font-size: 15px;
+    color: #453429;
+    display: flex;
+    line-height: 2;
+}
+.riqi{
+    position: absolute;
+    right: 10%;
+    font-family: 宋体;
+    font-size: 15px;
+    color: #453429;
+    line-height: 2;
+}
+
+/* 底部导航栏 */
+.dibu {
+    position: relative;
+    padding-bottom: 50px;
+    border-top: 1px solid #664e3d;
+    font-size: medium;
+    color: #453429;
+    font-family: 宋体;
+    background: url("../资源img/img11.jpg");
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -950px;
+    padding-top: 13px;
+}
+
+.dibu_shang {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 22px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.dibu_we {
+    font-family: 宋体;
+    position: relative;
+    padding: 0 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dibu_we:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1em;
+    width: 1px;
+    background-color: #664e3d;
+}
+
+.dibu_xia {
+    font-size: 17px;
+    line-height: 2;
+    padding-right: 221px;
+    padding-left: 158px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+span.s {
+    padding-left: 54px;
+}
+.dibu_xia.s {
+    position: relative;
+    padding: 0 18px;
+    display: flex;
+    text-align: center;
+}
+
+.red {
+    color: rgb(173, 39, 39);
+}
+
+/* 盒子 */
+.hezi{
+    position: relative;
+    background: url("../资源img/img11.jpg");
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 100px;
+    bottom: -898px;
+}
+.slot-track {
+    position: relative;
+    z-index: 99;
+    width: calc((100% - 42px) / 21); /* 调整宽度以铺满底部，并且留出间距 */
+    margin: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+      .s1,
+      .s2,
+      .s3,
+      .s4,
+      .s5,
+      .s6,
+      .s7,
+      .s8,
+      .s9,
+      .s10,
+      .s11,
+      .s12,
+      .s13,
+      .s14,
+      .s15,
+      .s16,
+      .s17,
+      .s18,
+      .s19,
+      .s20,
+      .s21 {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+.s1 {
+    background: url("../资源img/c1.png");
+    width: 100%; /* 初始状态设置不同大小 */
+    height: 55px;
+}
+
+.s2 {
+    background: url("../资源img/c2.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s3 {
+    background: url("../资源img/c3.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s4 {
+    background: url("../资源img/c4.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s5 {
+    background: url("../资源img/c5.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s6 {
+    background: url("../资源img/c6.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s7 {
+    background: url("../资源img/c8.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s8 {
+    background: url("../资源img/c8.png");
+    width: 100%;
+    height: 55px;
+}
+
+.s9 {
+    background: url("../资源img/c9.png");
+    width: 100%;
+    height: 55px;
+}
+.s10{
+    background: url("../资源img/c10.png");
+    width: 100%;
+    height: 55px;
+}
+.s11{
+    background: url("../资源img/c11.png");
+    width: 100%;
+    height: 55px;
+}
+.s12{
+    background: url("../资源img/c12.png");
+    width: 100%;
+    height: 55px;
+}
+.s13{
+    background: url("../资源img/c13.png");
+    width: 100%;
+    height: 55px;
+}
+.s14{
+    background: url("../资源img/c14.png");
+    width: 100%;
+    height: 55px;
+}
+.s15{
+    background: url("../资源img/c15.png");
+    width: 100%;
+    height: 55px;
+}
+.s16{
+    background: url("../资源img/c16.png");
+    width: 100%;
+    height: 55px;
+}
+.s17{
+    background: url("../资源img/c17.png");
+    width: 100%;
+    height: 55px;
+}
+.s18{
+    background: url("../资源img/c18.png");
+    width: 100%;
+    height: 55px;
+}
+.s19{
+    background: url("../资源img/c19.png");
+    width: 100%;
+    height: 55px;
+}
+.s20{
+    background: url("../资源img/c20.png");
+    width: 100%;
+    height: 55px;
+}
+.s21{
+    background: url("../资源img/c21.png");
+    width: 100%;
+    height: 55px;
+}
+
